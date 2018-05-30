@@ -59,6 +59,7 @@ SCATTER_GRAPH_CHOICE_DICT = {'FTER': 'Full-Time Permanent Employment Rate',
                              'SAL2': 'Gross Monthly Salary Mean (Inflation Adjusted)'}
 
 app = dash.Dash(__name__)
+app.title = 'Graduate Employment Data'
 server = app.server
 
 app.scripts.config.serve_locally = True
@@ -151,7 +152,7 @@ app.layout = html.Div(
 
             dcc.Graph(id='graph-3'),
 
-            html.P('Source: Ministry of Education, data.gov.sg and sgcharts.sg (for the fantastic historic dataset!)')
+            html.P('Source: Ministry of Education, data.gov.sg and sgcharts.sg)')
 
         ], className='container'),
 
