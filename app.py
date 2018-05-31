@@ -66,6 +66,8 @@ app.scripts.config.serve_locally = True
 
 app.css.append_css({'external_url': 'https://codepen.io/shermjj/pen/ZREaLY.css'})
 app.css.append_css({'external_url': 'https://fonts.googleapis.com/css?family=Open+Sans'})
+app.css.append_css(
+    {'external_url': 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/message.min.css'})
 
 app.layout = html.Div(
     [
@@ -87,9 +89,10 @@ app.layout = html.Div(
                          html.Div('Passion is overrated - try money instead!')],
                         style={'text-align': 'center', 'fontFamily': 'Open Sans'}),
             ], style={'width': '80%', 'margin': 'auto', 'padding': '20px 0px'}),
-            html.P(
-                'Click and drag to zoom in and out. Check the top right corner of the graph for more graph functions.'),
-            html.P("This site works best on non mobile devices. (Particularly, cursor hover doesn't work :( )"),
+            html.Div(
+                'Click and drag to zoom in. Check the top right corner of the graph for more options.'
+                "This site works best on non mobile devices. (Particularly, cursor hover doesn't work :C )",
+                className='ui big info message', style={'text-align': 'center'}),
             html.Div([
                 dcc.Dropdown(
                     id='yaxis-type-1',
