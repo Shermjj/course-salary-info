@@ -73,7 +73,7 @@ app.layout = html.Div(
             html.Div([
                 html.H1([html.Strong('Nine '), ' years of graduate employment data in ',
                          html.Strong('Five '), 'public universities'],
-                        style={'text-align': 'center', 'fontFamily': 'Open Sans', 'padding': '30px 0px'}),
+                        style={'text-align': 'center', 'fontFamily': 'Open Sans', 'padding': '45px 0px'}),
                 html.H1([html.Span('NUS ', style={'color': COLOR_DICT['NUS']}),
                          html.Span('NTU ', style={'color': COLOR_DICT['NTU']}),
                          html.Span('SMU ', style={'color': COLOR_DICT['SMU']}),
@@ -202,7 +202,7 @@ def update_figure1(selected_year, yaxis_type):
             margin=go.Margin(
                 l=50,
                 r=0,
-                b=20,
+                b=30,
                 t=0
             )
         )
@@ -245,7 +245,7 @@ def update_figure2(selected_year, yaxis_type):
             margin=go.Margin(
                 l=50,
                 r=0,
-                b=20,
+                b=30,
                 t=0
             )
         )
