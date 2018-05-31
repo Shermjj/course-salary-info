@@ -202,7 +202,7 @@ def update_figure1(selected_year, yaxis_type):
             margin=go.Margin(
                 l=50,
                 r=0,
-                b=30,
+                b=75,
                 t=0
             )
         )
@@ -245,7 +245,7 @@ def update_figure2(selected_year, yaxis_type):
             margin=go.Margin(
                 l=50,
                 r=0,
-                b=30,
+                b=75,
                 t=0
             )
         )
