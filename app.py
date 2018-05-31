@@ -89,7 +89,7 @@ app.layout = html.Div(
             ], style={'width': '80%', 'margin': 'auto', 'padding': '20px 0px'}),
             html.P(
                 'Click and drag to zoom in and out. Check the top right hand corner of the graph for more options. '
-                '(This site works best on non mobile devices)'),
+                "This site works best on non mobile devices. (Particularly, cursor hover doesn't work"),
             html.Div([
                 dcc.Dropdown(
                     id='yaxis-type-1',
@@ -98,7 +98,7 @@ app.layout = html.Div(
                     value='SAL1',
                     searchable=False,
                     clearable=False,
-                    className='three columns'),
+                    className='five columns'),
                 dcc.Slider(
                     id='year-slider-1',
                     min=df.index.min(),
@@ -106,7 +106,7 @@ app.layout = html.Div(
                     value=df.index.max(),
                     step=None,
                     marks={str(year): str(year) for year in df.index.unique()},
-                    className='nine columns')
+                    className='seven columns')
             ], className='row'),
             dcc.Graph(id='graph-1'),
             html.Hr(),
@@ -119,7 +119,7 @@ app.layout = html.Div(
                     value='FTER',
                     searchable=False,
                     clearable=False,
-                    className='three columns'),
+                    className='five columns'),
                 dcc.Slider(
                     id='year-slider-2',
                     min=df.index.min(),
@@ -127,7 +127,7 @@ app.layout = html.Div(
                     value=df.index.max(),
                     step=None,
                     marks={str(year): str(year) for year in df.index.unique()},
-                    className='nine columns')
+                    className='seven columns')
             ], className='row'),
 
             dcc.Graph(id='graph-2'),
@@ -139,7 +139,7 @@ app.layout = html.Div(
                     value='Gross Monthly Salary Mean',
                     searchable=False,
                     clearable=False,
-                    className='three columns'
+                    className='five columns'
                 ),
                 dcc.Dropdown(
                     id='course-slider-3',
@@ -147,7 +147,7 @@ app.layout = html.Div(
                     multi=True,
                     value=LINE_GRAPH_DEFAULT,
                     placeholder="Type in a course to search.... (or try the 'sector average'!)",
-                    className='nine columns')
+                    className='seven columns')
             ], className='row'),
 
             dcc.Graph(id='graph-3'),
