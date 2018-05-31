@@ -75,7 +75,7 @@ app.layout = html.Div(
             html.Div([
                 html.H1([html.Strong('Nine '), ' years of graduate employment data in ',
                          html.Strong('Five '), 'public universities'],
-                        style={'text-align': 'center', 'fontFamily': 'Open Sans', 'padding': '45px 0px'}),
+                        style={'text-align': 'center', 'fontFamily': 'Open Sans', 'padding': '60px 0px'}),
                 html.H1([html.Span('NUS ', style={'color': COLOR_DICT['NUS']}),
                          html.Span('NTU ', style={'color': COLOR_DICT['NTU']}),
                          html.Span('SMU ', style={'color': COLOR_DICT['SMU']}),
@@ -89,9 +89,9 @@ app.layout = html.Div(
                          html.Div('Passion is overrated - try money instead!')],
                         style={'text-align': 'center', 'fontFamily': 'Open Sans'}),
             ], style={'width': '80%', 'margin': 'auto', 'padding': '20px 0px'}),
-            html.Div(
-                'Click and drag to zoom in. Check the top right corner of the graph for more options.'
-                "This site works best on non mobile devices. (Particularly, cursor hover doesn't work :C )",
+            html.Div([
+                html.Div('Click and drag to zoom in. Check the top right corner of the graph for more options.'),
+                html.Div("This site works best on non mobile devices. (Particularly, cursor hover doesn't work :C )")],
                 className='ui big info message', style={'text-align': 'center'}),
             html.Div([
                 dcc.Dropdown(
