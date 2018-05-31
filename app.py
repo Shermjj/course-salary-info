@@ -88,8 +88,8 @@ app.layout = html.Div(
                         style={'text-align': 'center', 'fontFamily': 'Open Sans'}),
             ], style={'width': '80%', 'margin': 'auto', 'padding': '20px 0px'}),
             html.P(
-                'Click and drag to zoom in and out. Check the top right hand corner of the graph for more options. '
-                "This site works best on non mobile devices. (Particularly, cursor hover doesn't work"),
+                'Click and drag to zoom in and out. Check the top right hand corner of the graph for more options.'),
+            html.P("This site works best on non mobile devices. (Particularly, cursor hover doesn't work)"),
             html.Div([
                 dcc.Dropdown(
                     id='yaxis-type-1',
