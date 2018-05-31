@@ -73,20 +73,20 @@ app.layout = html.Div(
             html.Div([
                 html.H1([html.Strong('Nine '), ' years of graduate employment data in ',
                          html.Strong('Five '), 'public universities'],
-                        style={'text-align': 'center', 'fontFamily': 'Open Sans', 'padding': '20px 0px'}),
+                        style={'text-align': 'center', 'fontFamily': 'Open Sans', 'padding': '30px 0px'}),
                 html.H1([html.Span('NUS ', style={'color': COLOR_DICT['NUS']}),
                          html.Span('NTU ', style={'color': COLOR_DICT['NTU']}),
                          html.Span('SMU ', style={'color': COLOR_DICT['SMU']}),
                          html.Span('SUTD ', style={'color': COLOR_DICT['SUTD']}),
                          html.Span('SIT', style={'color': COLOR_DICT['SIT']})],
                         style={'text-align': 'center'})
-            ], style={'width': '80%', 'margin': 'auto'}),
+            ], style={'margin': 'auto'}),
             html.Hr(style={'width': '75%', 'margin': 'auto'}),
             html.Div([
                 html.H4([html.Div("Unsure of what to study for in uni? Not passionate about any particular subject?"),
                          html.Div('Passion is overrated - try money instead!')],
                         style={'text-align': 'center', 'fontFamily': 'Open Sans'}),
-            ], style={'width': '80%', 'margin': 'auto'}),
+            ], style={'width': '80%', 'margin': 'auto', 'padding': '20px 0px'}),
             html.P(
                 'Click and drag to zoom in and out. Check the top right hand corner of the graph for more options. '
                 '(This site works best on non mobile devices)'),
@@ -194,11 +194,17 @@ def update_figure1(selected_year, yaxis_type):
             yaxis={'title': choice_array[0],
                    'type': 'linear',
                    'dtick': 250},
-            height=1000,
+            height=700,
             boxmode='group',
             showlegend=False,
             plot_bgcolor='rgb(243, 243, 243)',
-            paper_bgcolor='rgb(243, 243, 243)'
+            paper_bgcolor='rgb(243, 243, 243)',
+            margin=go.Margin(
+                l=50,
+                r=0,
+                b=20,
+                t=0
+            )
         )
     }
 
@@ -231,11 +237,17 @@ def update_figure2(selected_year, yaxis_type):
                    'type': 'linear',
                    'dtick': tick
                    },
-            height=1000,
+            height=700,
             boxmode='group',
             showlegend=False,
             plot_bgcolor='rgb(243, 243, 243)',
-            paper_bgcolor='rgb(243, 243, 243)'
+            paper_bgcolor='rgb(243, 243, 243)',
+            margin=go.Margin(
+                l=50,
+                r=0,
+                b=20,
+                t=0
+            )
         )
     }
 
@@ -269,10 +281,16 @@ def update_figure3(classes, yaxis_option):
         'data': traces,
         'layout': go.Layout(
             yaxis={'title': yaxis_option, 'type': 'linear', 'dtick': tick},
-            height=1000,
+            height=700,
             legend={'bgcolor': 'rgba(192,192,192,0.1)', 'x': 0},
             plot_bgcolor='rgb(243, 243, 243)',
-            paper_bgcolor='rgb(243, 243, 243)'
+            paper_bgcolor='rgb(243, 243, 243)',
+            margin=go.Margin(
+                l=50,
+                r=0,
+                b=20,
+                t=0
+            )
 
         )
     }
