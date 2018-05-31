@@ -154,8 +154,8 @@ app.layout = html.Div(
             ], className='row'),
 
             dcc.Graph(id='graph-3'),
-
-            html.P('Source: Ministry of Education, data.gov.sg and sgcharts.sg)')
+            html.Hr(),
+            html.P('Source: Ministry of Education, data.gov.sg and sgcharts.com')
 
         ], className='container'),
 
