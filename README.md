@@ -6,6 +6,6 @@ The website is available [here](https://whatcourse.herokuapp.com)
 
 Screenshots:
 
-(https://raw.githubusercontent.com/Shermjj/course-salary-info/master/screenshots/image.png)
+![screenshot here](https://raw.githubusercontent.com/Shermjj/course-salary-info/master/screenshots/image.png)
 
-(https://raw.githubusercontent.com/Shermjj/course-salary-info/master/screenshots/image1.png)
+![screenshot here](https://raw.githubusercontent.com/Shermjj/course-salary-info/master/screenshots/image2.png)
