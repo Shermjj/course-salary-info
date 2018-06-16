@@ -1,6 +1,9 @@
 # Boxplots of all the different major infos
 # Since we can't specify the median,q1,q3, we have to do q1,q1,median,median,q3,q3
 # So that min = q1 and max = q1
+# Fun fact: we use a local edited version of plotly js as it doesn't allow us modify the box plot labels
+# Also, when pushing to heroku, change the python version to clear the cache (nice fix heroku)
+# Otherwise, the env is cached by default
 
 import dash
 import dash_core_components as dcc
